@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Azu Páginas Web | Páginas web para emprendimientos</title>
+    <meta name="description"
+        content="Diseño, desarrollo y publicación de páginas web para pequeños negocios y marcas personales. Hosting incluido en todos los planes.">
+    <link rel="stylesheet" href="styles.css">
+    <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <header class="nav">
+        <div class="nav__inner">
+            <a class="nav__brand" href="#inicio" aria-label="Azu Páginas Web, inicio">
+                <!-- ESPACIO PARA LOGO: se completa desde script.js (CONFIG.logo) o reemplazá este span por tu <img> -->
+                <span class="logo-slot logo-slot--sm" data-logo>Logo</span>
+                <span class="nav__name">Azu Páginas Web</span>
+            </a>
+            <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+            <nav id="menu" class="nav__links">
+                <a href="#planes">Planes</a>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+                <a class="nav__ig" href="https://instagram.com/azupaginasweb" target="_blank"
+                    rel="noopener">@azupaginasweb</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+            <div class="hero__lines" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div class="container hero__inner">
+                <span class="logo-slot logo-slot--lg" data-logo>Tu logo</span>
+                <p class="eyebrow">Azu Páginas Web · Desde Mar del Plata</p>
+                <h1>Una web simple, clara y <em>tuya</em> ♡</h1>
+                <p class="lead">Diseño, desarrollo y publicación de páginas web para pequeños negocios y marcas
+                    personales. El hosting va incluido en todos los planes ♡</p>
+                <div class="hero__cta">
+                    <a class="btn" href="#planes">Ver planes</a>
+                    <a class="btn btn--ghost" href="#contacto">Contame tu idea</a>
+                </div>
+                <a class="hero__ig" href="https://instagram.com/azupaginasweb" target="_blank" rel="noopener">Instagram
+                    · @azupaginasweb</a>
+            </div>
+        </section>
+        <div class="sea sea--up" aria-hidden="true"></div>
+
+        <!-- QUÉ NECESITÁS -->
+        <section class="section section--cyan" id="como-funciona">
+            <div class="container">
+                <header class="section__head reveal">
+                    <p class="eyebrow">Antes de empezar</p>
+                    <h2>¿Qué necesitás para tener tu web online?</h2>
+                    <p>Una landing page es una página web de desplazamiento vertical, donde toda la información está
+                        organizada en secciones. Tiene un encabezado y un pie de página, y permite que tus clientes
+                        conozcan tu emprendimiento, encuentren lo que necesitan y sepan cómo contactarte ♡</p>
+                </header>
+                <div class="trio reveal">
+                    <div class="trio__item">
+                        <h3>Dominio</h3>
+                        <p>Es la dirección de tu página, por ejemplo www.tuemprendimiento.com. Se abona aparte y queda a
+                            tu nombre ♡</p>
+                    </div>
+                    <div class="trio__item">
+                        <h3>Hosting</h3>
+                        <p>Es donde viven los archivos de tu web para que cualquiera pueda visitarla. Del hosting me
+                            encargo yo, va incluido en todos los planes ♡</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="sea sea--down" aria-hidden="true"></div>
+
+        <!-- PLANES -->
+        <section class="section" id="planes">
+            <div class="container">
+                <header class="section__head reveal">
+                    <p class="eyebrow">Planes</p>
+                    <h2>Elegí el tamaño de tu web</h2>
+                    <p>Todos incluyen hosting, diseño adaptable a celulares y computadoras, y la publicación de tu web ♡
+                    </p>
+                </header>
+
+                <div class="plans reveal">
+                    <!-- ESTÁNDAR -->
+                    <article class="plan">
+                        <h3>Estándar</h3>
+                        <p class="plan__price">$50.000</p>
+                        <p class="plan__for">Para mostrar lo esencial de tu negocio ♡</p>
+                        <ul>
+                            <li>Diseño personalizado, adaptado a tu marca</li>
+                            <li>Hasta 5 secciones: inicio, sobre mí, servicios, preguntas frecuentes y contacto, por
+                                ejemplo</li>
+                            <li>Información organizada para que encuentren lo que buscan</li>
+                            <li>Botones directos a redes sociales y WhatsApp</li>
+                            <li>Google Maps, si tenés lugar físico</li>
+                            <li>Una ronda de ajustes</li>
+                            <li>Publicación de la web</li>
+                        </ul>
+                        <p class="plan__no">No incluye: carrito de compras y pagos por la página, ni inicio de sesión
+                            para usuarios.</p>
+                        <a class="btn" href="#contacto" data-plan="Estándar">Quiero este plan</a>
+                    </article>
+
+                    <!-- PREMIUM -->
+                    <article class="plan plan--featured">
+                        <p class="plan__tag">El más elegido</p>
+                        <h3>Premium</h3>
+                        <p class="plan__price">$75.000</p>
+                        <p class="plan__for">Más espacio para mostrar todo lo que ofrecés ♡</p>
+                        <ul>
+                            <li>Todo lo del plan Estándar</li>
+                            <li>Hasta 8 secciones a elección</li>
+                            <li>Formulario de consultas que genera un mensaje listo para enviar por WhatsApp</li>
+                            <li>Sección de reseñas y testimonios</li>
+                            <li>Galería interactiva con imágenes ampliables</li>
+                            <li>Dos rondas de ajustes</li>
+                            <li>Publicación de la web</li>
+                        </ul>
+                        <p class="plan__no">Las reseñas y la galería cuentan dentro de las 8 secciones. No incluye
+                            carrito de compras y pagos, ni inicio de sesión.</p>
+                        <a class="btn" href="#contacto" data-plan="Premium">Quiero este plan</a>
+                    </article>
+
+                    <!-- A MEDIDA -->
+                    <article class="plan">
+                        <h3>A medida</h3>
+                        <p class="plan__price"><small>Desde</small> $100.000</p>
+                        <p class="plan__for">Para ideas más específicas o con funciones especiales ♡</p>
+                        <ul>
+                            <li>Diseño personalizado desde cero</li>
+                            <li>Tiendas online, carritos, catálogos, webs con reservas o turnos, proyectos especiales
+                            </li>
+                            <li>Integración de herramientas y servicios externos</li>
+                            <li>Estructura y secciones según tus necesidades</li>
+                            <li>Una ronda de ajustes y publicación</li>
+                        </ul>
+                        <p class="plan__no">Presupuesto personalizado: primero conversamos sobre tu idea y definimos qué
+                            necesitás.</p>
+                        <a class="btn" href="#contacto" data-plan="A medida">Quiero conversarlo</a>
+                    </article>
+                </div>
+
+                <div class="faq reveal">
+                    <details>
+                        <summary>¿Cómo consigo mi dominio?</summary>
+                        <p>Te recomiendo dónde comprarlo y te guío durante el proceso. Si preferís, también puedo
+                            encargarme de la compra y la configuración: solo tendrías que transferirme el importe del
+                            dominio. Queda siempre a tu nombre, para que puedas gestionarlo como quieras ♡</p>
+                    </details>
+                    <details>
+                        <summary>¿Qué incluye el hosting?</summary>
+                        <p>Tu web estará alojada y bajo mi cuidado mientras mantengas el servicio conmigo. Me encargo
+                            del alojamiento y de conservar copias de seguridad para ayudar a mantenerla sana y salva ♡
+                        </p>
+                    </details>
+                    <details>
+                        <summary>¿Ofrecés mantenimiento?</summary>
+                        <p>Sí, si lo necesitás. Podés pedir un cambio puntual por $7.000, o sumar el mantenimiento
+                            mensual por $20.000: incluye hasta 3 cambios de textos o imágenes por mes, copias de
+                            seguridad, aviso antes de que venza tu dominio, revisión de que tu web siga funcionando y
+                            soporte por WhatsApp ♡</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <div class="sea sea--up" aria-hidden="true"></div>
+
+        <!-- SOBRE MÍ -->
+        <section class="section section--cyan" id="sobre-mi">
+            <div class="container about">
+                <!-- FOTO: se completa desde script.js (CONFIG.foto) o reemplazá este div por tu <img> -->
+                <div class="about__photo reveal" data-photo><span>Tu foto</span></div>
+                <div class="about__text reveal">
+                    <p class="eyebrow">Sobre mí</p>
+                    <h2>Hola, soy <em>Azu</em></h2>
+                    <p>Diseño y desarrollo páginas web para pequeños negocios y marcas personales. Creo que tener una
+                        web tiene que ser algo accesible y sencillo, sin tecnicismos ni vueltas ♡</p>
+                    <ul class="values">
+                        <li>Confianza</li>
+                        <li>Creatividad</li>
+                        <li>Claridad</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="sea sea--down" aria-hidden="true"></div>
+
+        <!-- PROYECTOS -->
+        <section class="section" id="proyectos">
+            <div class="container">
+                <header class="section__head reveal">
+                    <p class="eyebrow">Proyectos</p>
+                    <h2>Algunas webs que ya hice</h2>
+                    <p>Un vistazo a cómo se ve el trabajo terminado ♡</p>
+                </header>
+                <div class="projects reveal">
+                    <!-- Repetí este bloque por cada proyecto. Cambiá href, imagen, nombre y detalle -->
+                    <a class="project" href="#" target="_blank" rel="noopener">
+                        <div class="project__img"><span>Imagen del proyecto</span></div>
+                        <div class="project__body">
+                            <h3>Nombre del proyecto</h3>
+                            <p>Rubro · Plan Estándar</p>
+                            <span class="project__link">Ver sitio</span>
+                        </div>
+                    </a>
+                    <a class="project" href="#" target="_blank" rel="noopener">
+                        <div class="project__img"><span>Imagen del proyecto</span></div>
+                        <div class="project__body">
+                            <h3>Nombre del proyecto</h3>
+                            <p>Rubro · Plan Premium</p>
+                            <span class="project__link">Ver sitio</span>
+                        </div>
+                    </a>
+                    <a class="project" href="#" target="_blank" rel="noopener">
+                        <div class="project__img"><span>Imagen del proyecto</span></div>
+                        <div class="project__body">
+                            <h3>Nombre del proyecto</h3>
+                            <p>Rubro · A medida</p>
+                            <span class="project__link">Ver sitio</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="sea sea--up" aria-hidden="true"></div>
+
+        <!-- INSTAGRAM -->
+        <section class="section section--cyan ig" id="instagram">
+            <div class="container ig__inner reveal">
+                <p class="eyebrow">Instagram</p>
+                <a class="ig__handle" href="https://instagram.com/azupaginasweb" target="_blank"
+                    rel="noopener">@azupaginasweb</a>
+                <p>Proyectos, novedades e ideas para tu web ♡</p>
+                <a class="btn" href="https://instagram.com/azupaginasweb" target="_blank" rel="noopener">Seguime en
+                    Instagram</a>
+            </div>
+        </section>
+        <div class="sea sea--down" aria-hidden="true"></div>
+
+        <!-- CONTACTO -->
+        <section class="section" id="contacto">
+            <div class="container contact">
+                <header class="section__head reveal">
+                    <p class="eyebrow">Contacto</p>
+                    <h2>Contame tu <em>idea</em></h2>
+                    <p>Completá el formulario y se abre WhatsApp con tu mensaje listo para enviar. Después conversamos y
+                        vemos cómo hacerla realidad ♡</p>
+                </header>
+
+                <form id="contact-form" class="form reveal" novalidate>
+                    <div class="form__row">
+                        <label for="nombre">Tu nombre
+                            <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+                        </label>
+                        <label for="emprendimiento">Tu emprendimiento
+                            <input id="emprendimiento" name="emprendimiento" type="text"
+                                placeholder="Nombre o @ de Instagram">
+                        </label>
+                    </div>
+                    <label for="plan">Plan que te interesa
+                        <select id="plan" name="plan">
+                            <option value="Todavía no sé">Todavía no sé</option>
+                            <option value="Estándar">Estándar</option>
+                            <option value="Premium">Premium</option>
+                            <option value="A medida">A medida</option>
+                        </select>
+                    </label>
+                    <label for="idea">Tu idea
+                        <textarea id="idea" name="idea" rows="5"
+                            placeholder="Contame qué hacés y qué te gustaría que tenga tu web" required></textarea>
+                    </label>
+                    <button class="btn" type="submit">Enviar por WhatsApp</button>
+                    <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+        <div class="sea sea--up" aria-hidden="true"></div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <span class="logo-slot logo-slot--footer" data-logo-light>Logo crema</span>
+            <p>Azu Páginas Web · <a href="https://instagram.com/azupaginasweb" target="_blank"
+                    rel="noopener">@azupaginasweb</a></p>
+            <p>© <span id="year"></span> · Hecho con cariño en Mar del Plata ♡</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
