@@ -200,10 +200,13 @@ em {
 /* Logo grande del hero: el alto se adapta a la pantalla y el margen
    negativo es un porcentaje del alto, así nunca se pisa con el texto */
 .logo-slot--lg {
-    --alto: clamp(240px, 60vw, 400px); /* grande en compu, se achica solo en celu */
-    --acercar: .18;                    /* cuánto se mete el texto hacia el logo */
+    --alto: clamp(240px, 60vw, 400px);
+    /* grande en compu, se achica solo en celu */
+    --acercar: .18;
+    /* cuánto se mete el texto hacia el logo */
     height: var(--alto);
-    aspect-ratio: 1 / 2;               /* solo para el recuadro de prueba sin imagen */
+    aspect-ratio: 1 / 2;
+    /* solo para el recuadro de prueba sin imagen */
     margin-bottom: calc(var(--alto) * var(--acercar) * -1);
     font-size: .9rem;
 }
@@ -525,6 +528,7 @@ em {
 }
 
 /* PROYECTOS */
+/* PROYECTOS */
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -532,42 +536,90 @@ em {
 }
 
 .project {
-    text-decoration: none;
+    display: flex;
+    flex-direction: column;
     border: 1px solid var(--line);
+    background: var(--crema);
     transition: transform .25s;
-    display: block;
 }
 
 .project:hover {
     transform: translateY(-4px);
 }
 
-.project__img {
-    aspect-ratio: 4 / 3;
+/* marco de navegador */
+.browser {
+    border-bottom: 1px solid var(--line);
+}
+
+.browser__bar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: .4rem;
+    padding: .6rem .9rem;
     border-bottom: 1px solid var(--line);
-    font-family: var(--f-title);
-    overflow: hidden;
 }
 
-.project__img img {
+.browser__bar i {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 1px solid var(--cyan);
+}
+
+.browser__bar span {
+    flex: 1;
+    height: 12px;
+    margin-left: .6rem;
+    border: 1px solid var(--line);
+    border-radius: 99px;
+}
+
+.browser img {
     width: 100%;
-    height: 100%;
+    aspect-ratio: 16 / 10;
     object-fit: cover;
+    object-position: top;
 }
 
+/* texto de la tarjeta */
 .project__body {
-    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.6rem;
 }
 
-.project__body p {
+.project__tag {
+    font-size: .85rem;
+    letter-spacing: .15em;
     margin-bottom: .6rem;
 }
 
-.project__link {
-    border-bottom: 1px solid currentColor;
+.project__body h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.project__info {
+    margin: 0 0 1rem;
+    padding-top: .8rem;
+    border-top: 1px solid var(--line);
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.project__info strong {
+    display: block;
+    font-weight: 400;
+    font-size: .85rem;
+    letter-spacing: .15em;
+    margin-bottom: .3rem;
+}
+
+.project .btn {
+    align-self: flex-start;
+    margin-top: auto;
 }
 
 /* INSTAGRAM */
