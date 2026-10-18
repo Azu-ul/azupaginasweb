@@ -1,9 +1,9 @@
 /* ====== CONFIGURACIÓN: lo único que tenés que editar acá ====== */
 const CONFIG = {
-    whatsapp: "5492233445238", // tu número con código de país, sin + ni espacios (ej: 5492231234567)
-    logo: "assets/logo_crema.png",                  // ruta de tu logo, por ejemplo "img/logo.png"
+    whatsapp: "5492233445238", // Tu número con código de país, sin + ni espacios (ej: 5492231234567)
+    logo: "assets/logo_crema.png",                  // Ruta de tu logo, por ejemplo "img/logo.png"
     logoCrema: "assets/logo_cyan.png",
-    foto: "assets/azu.png"                   // ruta de tu foto, por ejemplo "img/azu.jpg"
+    foto: "assets/azu.png"                   // Ruta de tu foto, por ejemplo "img/azu.jpg"
 };
 
 /* Logo y foto */
