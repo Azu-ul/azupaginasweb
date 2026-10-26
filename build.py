@@ -16,6 +16,8 @@ SITE = "https://azupaginasweb.com"
 OG_IMAGE = SITE + "/assets/og-image.png"
 LOGO_URL = SITE + "/assets/logo_cyan.png"
 IG = "https://instagram.com/azupaginasweb"
+# Las dos tipografías en un solo pedido (Gelasio y Comic Relief, peso 400)
+FONTS_URL = "https://fonts.googleapis.com/css2?family=Comic+Relief&family=Gelasio&display=swap"
 PUBLISHED = "2026-10-25"
 MODIFIED = "2026-10-25"
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
@@ -142,6 +144,10 @@ def head(title, desc, canonical, root, og_type, jsonld):
     <meta property="og:image" content="{OG_IMAGE}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="{OG_IMAGE}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="{FONTS_URL}" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="{FONTS_URL}"></noscript>
     <link rel="stylesheet" href="{root}styles.css">
     <link rel="stylesheet" href="{root}blog.css">
     <link rel="icon" type="image/x-icon" href="{root}assets/favicon.ico">
@@ -154,7 +160,7 @@ def nav(root, blog):
     return f"""    <header class="nav">
         <div class="nav__inner">
             <a class="nav__brand" href="{root}" aria-label="Azu Páginas Web, inicio">
-                <span class="logo-slot logo-slot--sm" data-logo>Logo</span>
+                <span class="logo-slot logo-slot--sm has-img"><img src="{root}assets/logo_crema.png" width="800" height="800" decoding="async" alt="Logo de Azu Páginas Web"></span>
                 <span class="nav__name">Azu Páginas Web</span>
             </a>
             <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
@@ -174,13 +180,13 @@ def nav(root, blog):
 def footer(root, blog):
     return f"""    <footer class="footer">
         <div class="container footer__inner">
-            <span class="logo-slot logo-slot--footer" data-logo-light>Logo crema</span>
+            <span class="logo-slot logo-slot--footer has-img"><img src="{root}assets/logo_cyan.png" width="800" height="800" loading="lazy" decoding="async" alt="Logo de Azu Páginas Web"></span>
             <p>Azu Páginas Web · <a href="{IG}" target="_blank" rel="noopener">@azupaginasweb</a> · <a href="{blog}">Blog</a></p>
             <p>© <span id="year"></span> · Hecho con cariño en Mar del Plata ♡</p>
         </div>
     </footer>
 
-    <script src="{root}blog.js"></script>
+    <script src="{root}blog.js" defer></script>
 </body>
 
 </html>

@@ -1,21 +1,5 @@
-/* Script del blog: logo, menú del celular y año del footer.
-   Las rutas de las imágenes se calculan con data-root del <body>
-   (en /blog/ es "../" y en /blog/articulo/ es "../../"). */
-const ROOT = document.body.dataset.root || "";
-const CONFIG = {
-    logo: ROOT + "assets/logo_crema.png",
-    logoCrema: ROOT + "assets/logo_cyan.png"
-};
-
-/* Logo */
-function ponerLogo(selector, src) {
-    document.querySelectorAll(selector).forEach(function (el) {
-        el.classList.add("has-img");
-        el.innerHTML = '<img src="' + src + '" alt="Logo de Azu Páginas Web">';
-    });
-}
-ponerLogo("[data-logo]", CONFIG.logo);
-ponerLogo("[data-logo-light]", CONFIG.logoCrema);
+/* Script del blog: menú del celular y año del footer.
+   Los logos ya vienen escritos en el HTML (con ancho y alto) para que carguen enseguida. */
 
 /* Menú en celular */
 const toggle = document.querySelector(".nav__toggle");

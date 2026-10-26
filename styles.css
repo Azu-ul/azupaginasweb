@@ -1,6 +1,6 @@
-/* FUENTES (Google Fonts): tienen que ir primero en el archivo */
-@import url("https://fonts.googleapis.com/css2?family=Gelasio:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400&display=swap");
+/* FUENTES (Google Fonts): ahora se cargan con un <link> en el <head> de cada página
+   (Gelasio y Comic Relief). Antes iban con @import, que las hacía cargar en cadena y
+   demoraba que se viera la página. */
 
 :root {
     --cyan: #1d5b57;
