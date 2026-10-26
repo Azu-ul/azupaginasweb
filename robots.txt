@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://azupaginasweb.com/sitemap.xml
